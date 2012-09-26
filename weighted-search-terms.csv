@@ -1,0 +1,510 @@
+Directgov searches,Business Link searches,Total monthly searches,When I search for...,Then I...,see...,in the top ... results
+21001,,21001,jobs,should,https://www.gov.uk/jobs-jobsearch,2
+9804,,9804,income support,should,https://www.gov.uk/benefits-adviser,3
+9804,,9804,income support,should,https://www.gov.uk/income-support,3
+8564,,8564,sorn,should,https://www.gov.uk/register-sorn-statutory-off-road-notification,3
+7424,,7424,esa,should,https://www.gov.uk/employment-support-allowance,3
+7365,,7365,student finance,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+7365,,7365,student finance,should,https://www.gov.uk/student-finance-calculator,3
+5838,,5838,car tax,should,https://www.gov.uk/car-tax-disc-vehicle-licence,2
+5497,,5497,housing benefit,should,https://www.gov.uk/housing-benefit,3
+5349,,5349,dla,should,https://www.gov.uk/disability-living-allowance-dla-rates,3
+5349,,5349,dla,should,https://www.gov.uk/dla-disability-living-allowance-benefit,3
+5253,,5253,tax disc,should,https://www.gov.uk/car-tax-disc-vehicle-licence,2
+3323,1556,4879,redundancy,should,https://www.gov.uk/redundant-your-rights,3
+4799,,4799,attendance allowance,should,https://www.gov.uk/attendance-allowance,3
+4799,,4799,attendance allowance,should not,https://www.gov.uk/school-attendance-absence,5
+4760,,4760,passport,should,https://www.gov.uk/apply-renew-passport,2
+4519,,4519,jsa,should,https://www.gov.uk/jobs-jobsearch,5
+4519,,4519,jsa,should,https://www.gov.uk/jobseekers-allowance,3
+4377,,4377,driving test,should,https://www.gov.uk/practical-driving-test-for-cars,5
+4269,,4269,cv,should,https://www.gov.uk/jobs-jobsearch,5
+4050,,4050,carers allowance,should,https://www.gov.uk/carers-allowance,3
+3541,492,4033,maternity,should,https://www.gov.uk/maternity-allowance,5
+3541,492,4033,maternity,should,https://www.gov.uk/maternity-benefits,3
+3541,492,4033,maternity,should,https://www.gov.uk/statutory-maternity-pay,5
+3541,492,4033,maternity,should,https://www.gov.uk/sure-start-maternity-grant,5
+4021,,4021,tax credits,should,https://www.gov.uk/benefits-adviser,5
+4021,,4021,tax credits,should,https://www.gov.uk/claim-tax-credits,3
+3977,,3977,dvla,should,https://www.gov.uk/dvla-offices,5
+3929,,3929,theory test,should,https://www.gov.uk/book-a-driving-theory-test,3
+3929,,3929,theory test,should,https://www.gov.uk/driving-theory-test,3
+3811,,3811,child benefit,should,https://www.gov.uk/child-benefit,3
+3773,,3773,crisis loan,should,https://www.gov.uk/budgeting-loans,5
+3773,,3773,crisis loan,should,https://www.gov.uk/crisis-loans,3
+3428,,3428,blue badge,should,https://www.gov.uk/apply-blue-badge,3
+3428,,3428,blue badge,should,https://www.gov.uk/blue-badge-scheme-information-council,5
+3391,,3391,council tax,should,https://www.gov.uk/council-tax,3
+3022,273,3295,minimum wage,should,https://www.gov.uk/your-right-to-minimum-wage,3
+3192,,3192,pension credit,should,https://www.gov.uk/pension-credit,3
+3192,,3192,pension credit,should,https://www.gov.uk/pension-credit-calculator,3
+3185,,3185,all jobs,should,https://www.gov.uk/jobs-jobsearch,3
+3133,,3133,job,should,https://www.gov.uk/jobs-jobsearch,3
+3116,,3116,rapid reclaim,should,https://www.gov.uk/apply-jobseekers-allowance,3
+3116,,3116,rapid reclaim,should,https://www.gov.uk/jobseekers-allowance,3
+2981,,2981,working tax credit,should,https://www.gov.uk/working-tax-credit,3
+2930,,2930,benefits,should,https://www.gov.uk/benefits-adviser,3
+2930,,2930,benefits,should not,https://www.gov.uk/incapacity-benefit,10
+2859,,2859,change of address,should,https://www.gov.uk/change-address-driving-licence,5
+2859,,2859,change of address,should,https://www.gov.uk/change-name-address-on-vehicle-registration-certificate-v5c,5
+2859,,2859,change of address,should,https://www.gov.uk/tell-hmrc-about-a-change-of-name-or-address,5
+2844,,2844,job seekers allowance,should,https://www.gov.uk/jobs-jobsearch,5
+2844,,2844,job seekers allowance,should,https://www.gov.uk/jobseekers-allowance,3
+2685,,2685,job search,should,https://www.gov.uk/jobs-jobsearch,2
+2568,,2568,road tax,should,https://www.gov.uk/car-tax-disc-vehicle-licence,3
+2149,399,2548,ssp,should,https://www.gov.uk/sick-leave-pay-employees,5
+2149,399,2548,ssp,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+2501,,2501,working tax credits,should,https://www.gov.uk/working-tax-credit,3
+2478,,2478,divorce,should,https://www.gov.uk/divorce,3
+2358,,2358,tax,should,https://www.gov.uk/income-tax,3
+2358,,2358,tax,should,https://www.gov.uk/tax-codes,3
+1462,866,2328,grants,should,https://www.gov.uk/apply-for-student-finance-2012-13,5
+2321,,2321,mot,should,https://www.gov.uk/check-mot-status-vehicle,3
+2321,,2321,mot,should,https://www.gov.uk/getting-an-mot,3
+2282,,2282,csa,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,3
+2262,,2262,jobseekers allowance,should,https://www.gov.uk/benefits-adviser,5
+2262,,2262,jobseekers allowance,should,https://www.gov.uk/jobs-jobsearch,5
+2262,,2262,jobseekers allowance,should,https://www.gov.uk/jobseekers-allowance,3
+2262,,2262,national insurance,should,https://www.gov.uk/national-insurance,3
+2150,,2150,driving licence,should,https://www.gov.uk/apply-first-provisional-driving-licence,5
+2150,,2150,driving licence,should,https://www.gov.uk/apply-online-to-replace-a-driving-licence,5
+2150,,2150,driving licence,should,https://www.gov.uk/change-address-driving-licence,5
+2150,,2150,driving licence,should,https://www.gov.uk/change-photo-driving-licence,5
+2150,,2150,driving licence,should not,https://www.gov.uk/licence-finder,5
+2150,,2150,national insurance,should,https://www.gov.uk/national-insurance-contributions-nics-for-employers,5
+2127,,2127,taxdisc,should,https://www.gov.uk/car-tax-disc-vehicle-licence,2
+2099,,2099,v62,should,https://www.gov.uk/vehicle-registration-certificate-v5c-log-book,3
+2070,,2070,budgeting loan,should,https://www.gov.uk/budgeting-loans,3
+2070,,2070,budgeting loan,should,https://www.gov.uk/crisis-loans,5
+794,1249,2043,cleaning,should,https://www.gov.uk/jobs-jobsearch,3
+1740,290,2030,sick pay,should,https://www.gov.uk/sick-leave-pay-employees,5
+1740,290,2030,sick pay,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+1501,505,2006,self employed,should,https://www.gov.uk/become-self-employed,3
+1501,505,2006,self employed,should,https://www.gov.uk/employment-status,5
+1501,505,2006,self employed,should,https://www.gov.uk/register-for-self-assessment,5
+1501,505,2006,self employed,should,https://www.gov.uk/self-employed-national-insurance-rates,10
+1501,505,2006,self employed,should,https://www.gov.uk/set-up-sole-trader,3
+1969,,1969,passports,should,https://www.gov.uk/apply-renew-passport,2
+1950,,1950,child tax credit,should,https://www.gov.uk/child-tax-credit,3
+1061,832,1893,holiday entitlement,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+1061,832,1893,holiday entitlement,should,https://www.gov.uk/holiday-entitlement-your-rights,3
+1874,,1874,maternity allowance,should,https://www.gov.uk/maternity-allowance,3
+1874,,1874,maternity allowance,should,https://www.gov.uk/maternity-benefits,3
+1800,,1800,community care grant,should,https://www.gov.uk/community-care-grant,3
+991,763,1754,holiday pay,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+991,763,1754,holiday pay,should,https://www.gov.uk/holiday-entitlement-your-rights,3
+1740,,1740,maternity pay,should,https://www.gov.uk/maternity-benefits,3
+1740,,1740,maternity pay,should,https://www.gov.uk/maternity-leave-pay-employees,5
+1740,,1740,maternity pay,should,https://www.gov.uk/statutory-maternity-pay,3
+1730,,1730,maternity leave,should,https://www.gov.uk/employee-rights-when-on-leave,5
+1730,,1730,maternity leave,should,https://www.gov.uk/maternity,3
+1730,,1730,maternity leave,should,https://www.gov.uk/maternity-leave,3
+1730,,1730,maternity leave,should,https://www.gov.uk/maternity-leave-pay-employees,5
+1730,,1730,maternity leave,should not,https://www.gov.uk/file-changes-to-a-company-with-companies-house,20
+1730,,1730,maternity leave,should not,https://www.gov.uk/know-when-you-can-leave-school,20
+1730,,1730,maternity leave,should not,https://www.gov.uk/leaving-prison/when-someone-can-leave-prison,20
+1714,,1714,social fund,should,https://www.gov.uk/budgeting-loans,5
+1714,,1714,social fund,should,https://www.gov.uk/crisis-loans,5
+1693,,1693,disability living allowance,should,https://www.gov.uk/disability-living-allowance-dla-rates,3
+1693,,1693,disability living allowance,should,https://www.gov.uk/dla-disability-living-allowance-benefit,3
+1693,,1693,social fund,should,https://www.gov.uk/social-fund,3
+1605,,1605,change address,should,https://www.gov.uk/change-address-driving-licence,5
+1605,,1605,change address,should,https://www.gov.uk/change-name-address-on-vehicle-registration-certificate-v5c,5
+1605,,1605,change address,should,https://www.gov.uk/tell-hmrc-about-a-change-of-name-or-address,5
+1238,348,1586,self employment,should,https://www.gov.uk/become-self-employed,3
+1238,348,1586,self employment,should,https://www.gov.uk/employment-status,10
+1238,348,1586,self employment,should,https://www.gov.uk/register-for-self-assessment,5
+1238,348,1586,self employment,should,https://www.gov.uk/self-employed-national-insurance-rates,10
+1238,348,1586,self employment,should,https://www.gov.uk/set-up-sole-trader,3
+1585,,1585,jobseekers,should,https://www.gov.uk/jobs-jobsearch,5
+1585,,1585,jobseekers,should,https://www.gov.uk/jobseekers-allowance,3
+1577,,1577,job seekers,should,https://www.gov.uk/jobs-jobsearch,5
+1577,,1577,job seekers,should,https://www.gov.uk/jobseekers-allowance,3
+1554,,1554,incapacity benefit,should,https://www.gov.uk/incapacity-benefit,3
+1529,,1529,apprenticeships,should,https://www.gov.uk/apprenticeships,3
+1483,,1483,state pension,should,https://www.gov.uk/state-pension,3
+1481,,1481,forms,should,https://www.gov.uk/apply-for-tax-disc-refund-form-v14,5
+1463,,1463,pff2,should,https://www.gov.uk/student-finance-evidence-given-by-parents-partners,3
+1463,,1463,pff2,should,https://www.gov.uk/student-finance-register-login,3
+1113,282,1395,smp,should,https://www.gov.uk/statutory-maternity-pay,
+1113,282,1395,smp,should,https://www.gov.uk/maternity-leave-pay-employees,
+1375,,1375,national insurance number,should,https://www.gov.uk/national-insurance,3
+1361,,1361,loans,should,https://www.gov.uk/budgeting-loans,5
+1361,,1361,loans,should,https://www.gov.uk/crisis-loans,5
+1361,,1361,loans,should,https://www.gov.uk/apply-for-student-finance-2012-13,5
+1323,,1323,child tax credits,should,https://www.gov.uk/child-tax-credit,3
+1313,,1313,probate,should,https://www.gov.uk/inheritance-tax,10
+1313,,1313,probate,should,https://www.gov.uk/valuing-estate-of-someone-who-died,5
+1313,,1313,probate,should,https://www.gov.uk/wills-probate-inheritance,3
+1313,,1313,probate,should not,https://www.gov.uk/guide-to-probation,10
+1313,,1313,probate,should not,https://www.gov.uk/leaving-prison,10
+1313,,1313,probate,should not,https://www.gov.uk/nominate-community-payback-project,10
+1313,,1313,probate,should not,https://www.gov.uk/youth-offending-team,10
+1309,,1309,d1,should,https://www.gov.uk/exchange-paper-driving-licence-photocard-licence,5
+1309,,1309,d1,should,https://www.gov.uk/claiming-driving-test-pass,5
+1299,,1299,pensions,should,https://www.gov.uk/state-pension,3
+1290,,1290,practical test,should,https://www.gov.uk/book-practical-driving-test,3
+1290,,1290,practical test,should,https://www.gov.uk/practical-driving-test-for-cars,5
+1290,,1290,practical test,should not,https://www.gov.uk/dsa-practical-test-booking-service-data-protection,5
+640,631,1271,vat,should,https://www.gov.uk/vat,3
+640,631,1271,vat,should,https://www.gov.uk/vat-businesses,5
+640,631,1271,vat,should,https://www.gov.uk/vat-rates,3
+640,631,1271,vat,should,https://www.gov.uk/vat-registration,5
+1268,,1268,crb,should,https://www.gov.uk/checks-on-job-applicants,3
+1268,,1268,crb,should,https://www.gov.uk/crb-criminal-records-bureau-check,3
+1268,,1268,driving,should,https://www.gov.uk/book-a-driving-theory-test,5
+1268,,1268,driving,should,https://www.gov.uk/apply-first-provisional-driving-licence,5
+1248,,1248,employment and support allowance,should,https://www.gov.uk/employment-support-allowance,3
+1220,,1220,employment support allowance,should,https://www.gov.uk/employment-support-allowance,3
+1208,,1208,v317,should,https://www.gov.uk/transferring-your-vehicle-registration-number-form-v317,3
+1204,,1204,cleaner,should,https://www.gov.uk/jobs-jobsearch,3
+1198,,1198,warehouse,should,https://www.gov.uk/jobs-jobsearch,3
+1143,,1143,crisis loans,should,https://www.gov.uk/budgeting-loans,5
+1143,,1143,crisis loans,should,https://www.gov.uk/crisis-loans,3
+1142,,1142,log in,should,https://www.gov.uk/student-finance-register-login,3
+1142,,1142,log in,should not,https://www.gov.uk/vehicle-registration-certificate-v5c-log-book,5
+1124,,1124,pension,should,https://www.gov.uk/state-pension,3
+1122,,1122,benefits adviser,should,https://www.gov.uk/benefits-adviser,1
+1096,,1096,housing,should,https://www.gov.uk/council-housing,5
+1096,,1096,housing,should,https://www.gov.uk/housing-benefit,5
+1096,,1096,housing,should not,https://www.gov.uk/file-an-annual-return-with-companies-house,10
+1096,,1096,housing,should not,https://www.gov.uk/file-changes-to-a-company-with-companies-house,10
+1093,,1093,ehic,should,https://www.gov.uk/apply-renew-european-health-insurance-card,3
+1090,,1090,v5c,should,https://www.gov.uk/vehicle-registration-certificate-v5c-log-book,3
+1078,,1078,paternity leave,should,https://www.gov.uk/additional-paternity-leave-pay-employees,5
+1078,,1078,paternity leave,should,https://www.gov.uk/paternity,3
+1078,,1078,paternity leave,should,https://www.gov.uk/paternity-leave-pay-employees,5
+1078,,1078,paternity leave,should,https://www.gov.uk/paternityleave,3
+1078,,1078,power of attorney,should,https://www.gov.uk/become-deputy,5
+1078,,1078,power of attorney,should,https://www.gov.uk/find-someones-attorney-or-deputy,5
+1078,,1078,power of attorney,should,https://www.gov.uk/power-of-attorney,3
+1078,,1078,power of attorney,should,https://www.gov.uk/report-concern-about-attorney-deputy,10
+1078,,1078,power of attorney,should not,https://www.gov.uk/apply-for-a-patent,10
+1078,,1078,power of attorney,should not,https://www.gov.uk/mobility-scooters-and-powered-wheelchairs-the-rules,10
+1078,,1078,power of attorney,should not,https://www.gov.uk/planning-permission-england-wales,10
+1078,,1078,power of attorney,should not,https://www.gov.uk/police-powers-of-arrest-your-rights,10
+1078,,1078,power of attorney,should not,https://www.gov.uk/police-powers-to-stop-and-search-your-rights,10
+1074,,1074,provisional,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+652,416,1068,holiday,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+652,416,1068,holiday,should,https://www.gov.uk/holiday-entitlement-your-rights,3
+1065,,1065,pn1,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+1065,,1065,pn1,should,https://www.gov.uk/student-finance-register-login,3
+647,278,925,holidays,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+647,278,925,holidays,should,https://www.gov.uk/holiday-entitlement-your-rights,3
+0,844,844,sole trader,should,https://www.gov.uk/set-up-sole-trader,3
+0,712,712,business rates,should,https://www.gov.uk/business-rates-calculator,3
+0,712,712,business rates,should,https://www.gov.uk/introduction-to-business-rates,3
+0,712,712,business rates,should not,https://www.gov.uk/benefits-adviser,5
+287,315,602,working time regulations,should,https://www.gov.uk/maximum-weekly-working-hours,3
+0,522,522,holiday calculator,should,https://www.gov.uk/calculate-your-holiday-entitlement,
+0,427,427,temporary event notice,should,https://www.gov.uk/temporary-events-notice,
+0,295,295,commodity codes,should,https://www.gov.uk/finding-commodity-codes,3
+0,295,295,commodity codes,should,https://www.gov.uk/trade-tariff,3
+0,266,266,employment contract,should,https://www.gov.uk/employment-contracts-and-conditions,5
+,,0,annual leave,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+,,0,annual leave,should,https://www.gov.uk/holiday-entitlement-your-rights,3
+,,0,apply for provisional licence,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,applying for a passport,should,https://www.gov.uk/apply-renew-passport,3
+,,0,background music licence,should,https://www.gov.uk/licence-finder,3
+,,0,bank holiday,should,https://www.gov.uk/bank-holidays,1
+,,0,bank holidays,should,https://www.gov.uk/bank-holidays,1
+,,0,basic state pension,should,https://www.gov.uk/state-pension,3
+,,0,benefit,should not,https://www.gov.uk/incapacity-benefit,10
+,,0,benefit calculator,should,https://www.gov.uk/benefits-adviser,3
+,,0,benefit fraud,should,https://www.gov.uk/benefit-fraud,3
+,,0,benefit fraud,should,https://www.gov.uk/report-benefit-fraud,3
+,,0,benefit fraud,should not,https://www.gov.uk/incapacity-benefit,10
+,,0,benefits calculator,should,https://www.gov.uk/benefits-adviser,3
+,,0,bereavement,should,https://www.gov.uk/after-a-death,5
+,,0,bereavement,should not,https://www.gov.uk/calculate-child-maintenance,10
+,,0,bereavement,should not,https://www.gov.uk/maternity-allowance,10
+,,0,bereavement,should not,https://www.gov.uk/voluntary-national-insurance-contributions,10
+,,0,birth,should,https://www.gov.uk/order-copy-birth-death-marriage-certificate,5
+,,0,birth certificate,should,https://www.gov.uk/order-copy-birth-death-marriage-certificate,3
+,,0,birth certificate,should,https://www.gov.uk/register-offices,5
+,,0,birth registration,should not,https://www.gov.uk/buy-a-personalised-registration-number,10
+,,0,birth registration,should not,https://www.gov.uk/vehicle-registration,10
+,,0,book a driving test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book driving practical test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book driving test,should,https://www.gov.uk/book-a-driving-theory-test,3
+,,0,book driving test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book driving theory test,should,https://www.gov.uk/book-a-driving-theory-test,3
+,,0,book my driving test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book practical test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book practical test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book test,should,https://www.gov.uk/book-a-driving-theory-test,3
+,,0,book test,should,https://www.gov.uk/book-life-in-uk-test,5
+,,0,book test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,book theory,should,https://www.gov.uk/book-a-driving-theory-test,3
+,,0,book theory test,should,https://www.gov.uk/book-a-driving-theory-test,3
+,,0,book theory test,should,https://www.gov.uk/book-your-instructor-theory-test,5
+,,0,book your driving test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,booking driving test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,booking practical test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,booking theory test,should,https://www.gov.uk/book-a-driving-theory-test,3
+,,0,br19,should,https://www.gov.uk/state-pension,10
+,,0,budgeting loans,should,https://www.gov.uk/budgeting-loans,3
+,,0,budgeting loans,should,https://www.gov.uk/crisis-loans,5
+,,0,carer's allowance,should,https://www.gov.uk/carers-allowance,3
+,,0,carers,should,https://www.gov.uk/carers-allowance,5
+,,0,child benefit form,should,https://www.gov.uk/child-benefit,3
+,,0,child benefits,should,https://www.gov.uk/child-benefit,3
+,,0,child maintenance,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,5
+,,0,child maintenance,should,https://www.gov.uk/arranging-child-maintenance-yourself,5
+,,0,child maintenance,should,https://www.gov.uk/calculate-child-maintenance,5
+,,0,child support,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,5
+,,0,child support,should,https://www.gov.uk/arranging-child-maintenance-yourself,5
+,,0,child support,should,https://www.gov.uk/calculate-child-maintenance,5
+,,0,child support agency,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,3
+,,0,childcare,should,https://www.gov.uk/childcare-tax-credits,3
+,,0,childcare,should,https://www.gov.uk/childcare-vouchers-better-off-calculator,3
+,,0,childcare,should,https://www.gov.uk/help-with-childcare-costs,5
+,,0,childcare vouchers,should,https://www.gov.uk/childcare-vouchers-better-off-calculator,3
+,,0,citizenship,should,https://www.gov.uk/becoming-a-british-citizen,3
+,,0,cleaning jobs,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,clock change,should,https://www.gov.uk/when-do-the-clocks-change,1
+,,0,companies house,should not,https://www.gov.uk/housing-benefit,10
+,,0,company name,should,https://www.gov.uk/get-information-about-a-company,5
+,,0,company name,should,https://www.gov.uk/limited-company-formation,5
+,,0,company names,should,https://www.gov.uk/get-information-about-a-company,5
+,,0,company names,should,https://www.gov.uk/limited-company-formation,5
+,,0,contact child support agency,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,3
+,,0,contact csa,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,3
+,,0,contact student finance,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,contact student finance england,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,council tax band,should,https://www.gov.uk/council-tax,3
+,,0,council tax band,should,https://www.gov.uk/council-tax-bands,3
+,,0,council tax band a,should,https://www.gov.uk/council-tax-bands,3
+,,0,council tax band c,should,https://www.gov.uk/council-tax-bands,3
+,,0,council tax banding,should,https://www.gov.uk/council-tax-bands,3
+,,0,council tax bands,should,https://www.gov.uk/council-tax,3
+,,0,council tax bands,should,https://www.gov.uk/council-tax-bands,3
+,,0,council tax benefit,should,https://www.gov.uk/apply-council-tax-benefit,3
+,,0,council tax benefit,should,https://www.gov.uk/council-tax-benefit,3
+,,0,council tax rates,should,https://www.gov.uk/council-tax,3
+,,0,criminal records,should not,https://www.gov.uk/claim-compensation-criminal-injury,10
+,,0,criminal records,should not,https://www.gov.uk/courts,10
+,,0,criminal records,should not,https://www.gov.uk/look-up-adoption-records,10
+,,0,csa contact number,should,https://www.gov.uk/arranging-child-maintenance-through-child-support-agency,3
+,,0,customs tariff,should,https://www.gov.uk/finding-commodity-codes,3
+,,0,customs tariff,should,https://www.gov.uk/trade-tariff,3
+,,0,death,should,https://www.gov.uk/after-a-death,3
+,,0,death,should,https://www.gov.uk/bereavement-allowance,10
+,,0,death,should,https://www.gov.uk/bereavement-payment,10
+,,0,death,should,https://www.gov.uk/find-bereavement-services-from-council,10
+,,0,death,should,https://www.gov.uk/find-persons-will,10
+,,0,death,should,https://www.gov.uk/order-copy-birth-death-marriage-certificate,10
+,,0,death,should,https://www.gov.uk/wills-probate-inheritance,5
+,,0,death,should not,https://www.gov.uk/get-birthday-or-anniversary-message-from-the-queen,20
+,,0,death,should not,https://www.gov.uk/organ-donation-register,10
+,,0,declare sorn,should,https://www.gov.uk/register-sorn-statutory-off-road-notification,3
+,,0,design principles,should,https://www.gov.uk/designprinciples,3
+,,0,driving jobs,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,driving license,should,https://www.gov.uk/apply-first-provisional-driving-licence,5
+,,0,driving license,should,https://www.gov.uk/apply-online-to-replace-a-driving-licence,5
+,,0,driving license,should,https://www.gov.uk/change-address-driving-licence,5
+,,0,driving license,should,https://www.gov.uk/change-photo-driving-licence,5
+,,0,driving license,should not,https://www.gov.uk/licence-finder,5
+,,0,dsa,should,https://www.gov.uk/disabled-students-allowances-dsas,3
+,,0,e111,should,https://www.gov.uk/apply-renew-european-health-insurance-card,3
+,,0,ema,should,https://www.gov.uk/education-maintenance-allowance-ema,3
+,,0,employing people,should not,https://www.gov.uk/alcohol-young-people-law,10
+,,0,employing people,should not,https://www.gov.uk/young-people-in-custody,10
+,,0,equality,should not,https://www.gov.uk/drink-drive-limit,10
+,,0,equality,should not,https://www.gov.uk/inherits-someone-dies-without-will,10
+,,0,find a job,should,https://www.gov.uk/jobs-jobsearch,2
+,,0,health and safety,should,https://www.gov.uk/carrying-out-health-and-safety-risk-assessments,3
+,,0,health and safety,should,https://www.gov.uk/health-safety-at-work,3
+,,0,health and safety,should,https://www.gov.uk/report-an-accident-or-health-and-safety-incident,5
+,,0,health and safety,should,https://www.gov.uk/workplace-accidents-and-injuries,5
+,,0,heating allowance,should,https://www.gov.uk/cold-weather-payment,5
+,,0,heating allowance,should,https://www.gov.uk/warm-front-scheme,5
+,,0,heating allowance,should,https://www.gov.uk/winter-fuel-payment,3
+,,0,holiday pay calculator,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+,,0,holiday pay calculator,should,https://www.gov.uk/holiday-entitlement-your-rights,3
+,,0,housing benefits,should,https://www.gov.uk/housing-benefit,3
+,,0,housing benifit,should,https://www.gov.uk/housing-benefit,3
+,,0,how much is a passport,should,https://www.gov.uk/passport-fees,3
+,,0,how much is council tax,should,https://www.gov.uk/council-tax,3
+,,0,how much is state pension,should,https://www.gov.uk/state-pension,3
+,,0,how much is statutory sick pay,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,how much is statutory sick pay,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,how to register,should,https://www.gov.uk/register-birth,50
+,,0,how to register,should not,https://www.gov.uk/register-stillbirth,5
+,,0,immigration,should,https://www.gov.uk/becoming-a-british-citizen,5
+,,0,immigration,should,https://www.gov.uk/legal-advice-immigration-asylum,5
+,,0,income tax,should,https://www.gov.uk/income-tax,3
+,,0,income tax,should,https://www.gov.uk/income-tax-rates,3
+,,0,job center,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,job centre,should,https://www.gov.uk/jobs-jobsearch,5
+,,0,job vacancies,should,https://www.gov.uk/jobs-jobsearch,2
+,,0,jobcentre,should,https://www.gov.uk/jobs-jobsearch,5
+,,0,jobcentre plus,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,jobcentreplus,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,jobsearch,should,https://www.gov.uk/jobs-jobsearch,2
+,,0,jobseeker's allowance,should,https://www.gov.uk/benefits-adviser,5
+,,0,jobseeker's allowance,should,https://www.gov.uk/jobs-jobsearch,5
+,,0,jobseeker's allowance,should,https://www.gov.uk/jobseekers-allowance,3
+,,0,learning difficulties,should,https://www.gov.uk/children-with-special-educational-needs,5
+,,0,learning difficulties,should not,https://www.gov.uk/learning-to-drive-a-tractor-or-specialist-vehicle,5
+,,0,legal aid,should,https://www.gov.uk/legal-aid,3
+,,0,lha,should,https://www.gov.uk/housing-benefit,3
+,,0,licence,should,https://www.gov.uk/licence-finder,3
+,,0,license,should,https://www.gov.uk/licence-finder,3
+,,0,login,should,https://www.gov.uk/student-finance-register-login,3
+,,0,make a sorn,should,https://www.gov.uk/register-sorn-statutory-off-road-notification,3
+,,0,marriage,should,https://www.gov.uk/marriages-civil-partnerships,3
+,,0,marriage,should,https://www.gov.uk/order-copy-birth-death-marriage-certificate,5
+,,0,mot check,should,https://www.gov.uk/check-mot-status-vehicle,3
+,,0,mot checker,should,https://www.gov.uk/check-mot-status-vehicle,3
+,,0,mot test,should,https://www.gov.uk/getting-an-mot,3
+,,0,music licence,should,https://www.gov.uk/licence-finder,3
+,,0,national minimum wage,should,https://www.gov.uk/your-right-to-minimum-wage,3
+,,0,new business,should,https://www.gov.uk/starting-a-business,5
+,,0,new passport,should,https://www.gov.uk/apply-renew-passport,3
+,,0,old age pension,should,https://www.gov.uk/state-pension,3
+,,0,out of date driving licence,should,https://www.gov.uk/change-photo-driving-licence,5
+,,0,out of date driving licence,should,https://www.gov.uk/renew-your-driving-licence-if-you-are-70-or-over,5
+,,0,part time jobs,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,part time student finance,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,passport application,should,https://www.gov.uk/apply-renew-passport,3
+,,0,passport application form,should,https://www.gov.uk/apply-renew-passport,3
+,,0,passport costs,should,https://www.gov.uk/passport-fees,3
+,,0,passport fee,should,https://www.gov.uk/passport-fees,3
+,,0,passport fees,should,https://www.gov.uk/passport-fees,3
+,,0,passport form,should,https://www.gov.uk/apply-renew-passport,3
+,,0,passport forms,should,https://www.gov.uk/apply-renew-passport,3
+,,0,passport prices,should,https://www.gov.uk/passport-fees,3
+,,0,pay council tax,should,https://www.gov.uk/pay-council-tax,3
+,,0,paye,should,https://www.gov.uk/income-tax,5
+,,0,paye,should,https://www.gov.uk/paye-forms-p45-p46-p60-p11d,5
+,,0,pension credit calculator,should,https://www.gov.uk/pension-credit-calculator,3
+,,0,pension credits,should,https://www.gov.uk/pension-credit,3
+,,0,pension credits,should,https://www.gov.uk/pension-credit-calculator,3
+,,0,pension forecast,should,https://www.gov.uk/get-a-state-pension-forecast,3
+,,0,pension forecast,should,https://www.gov.uk/plan-retirement-income,5
+,,0,pension rates,should,https://www.gov.uk/state-pension,3
+,,0,personal allowance,should,https://www.gov.uk/income-tax-rates,3
+,,0,planning,should,https://www.gov.uk/planning-permission-england-wales,5
+,,0,planning,should,https://www.gov.uk/search-register-planning-decisions,5
+,,0,police,should,https://www.gov.uk/contact-police,3
+,,0,police,should,https://www.gov.uk/report-crime-anti-social-behaviour,5
+,,0,pot hole,should,https://www.gov.uk/report-pothole,3
+,,0,pothole,should,https://www.gov.uk/report-pothole,3
+,,0,pr1,should,https://www.gov.uk/apply-for-student-finance-2011-12,3
+,,0,pr1,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,pr1,should,https://www.gov.uk/student-finance-register-login,3
+,,0,practical driving test,should,https://www.gov.uk/book-practical-driving-test,3
+,,0,practical driving test,should,https://www.gov.uk/practical-driving-test-for-cars,5
+,,0,practical driving test,should not,https://www.gov.uk/dsa-practical-test-booking-service-data-protection,5
+,,0,probate forms,should,https://www.gov.uk/wills-probate-inheritance,3
+,,0,probate forms,should not,https://www.gov.uk/apply-for-tax-disc-refund-form-v14,5
+,,0,probate forms,should not,https://www.gov.uk/register-sorn-statutory-off-road-notification,5
+,,0,probate forms,should not,https://www.gov.uk/register-to-vote,5
+,,0,provisional drivers licence,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,provisional drivers license,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,provisional driving licence,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,provisional driving license,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,provisional licence,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,provisional license,should,https://www.gov.uk/apply-first-provisional-driving-licence,3
+,,0,recycling,should,https://www.gov.uk/recycling-collections,3
+,,0,redundancy calculator,should,https://www.gov.uk/calculate-redundancy-pay,3
+,,0,redundancy notice,should,https://www.gov.uk/redundant-your-rights,5
+,,0,redundancy pay,should,https://www.gov.uk/calculate-redundancy-pay,5
+,,0,redundancy payment,should,https://www.gov.uk/redundant-your-rights,5
+,,0,redundancy payments,should,https://www.gov.uk/redundant-your-rights,5
+,,0,redundancy rights,should,https://www.gov.uk/redundant-your-rights,3
+,,0,retail,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,right to buy,should,https://www.gov.uk/find-out-about-right-to-buy-from-your-council,3
+,,0,self assessment,should,https://www.gov.uk/file-your-self-assessment-tax-return,5
+,,0,self assessment,should,https://www.gov.uk/how-to-send-self-assessment-online,5
+,,0,self assessment,should,https://www.gov.uk/self-assessment-tax-returns,3
+,,0,sick,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,sick,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,sick leave,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,sick leave,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,sick pay entitlement,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,sick pay entitlement,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,sickness,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,sickness,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,sickness benefit,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,sickness benefit,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,stamp duty,should,https://www.gov.uk/buy-sell-your-home,5
+,,0,stamp duty,should,https://www.gov.uk/stamp-duty-land-tax-rates,3
+,,0,start a business,should,https://www.gov.uk/starting-a-business,5
+,,0,statutory redundancy pay,should,https://www.gov.uk/calculate-redundancy-pay,5
+,,0,statutory sick pay,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,statutory sick pay,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,street light,should,https://www.gov.uk/report-problem-street-light,3
+,,0,streetlight,should,https://www.gov.uk/report-problem-street-light,3
+,,0,student,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,student,should,https://www.gov.uk/student-finance-calculator,3
+,,0,student,should,https://www.gov.uk/student-finance-register-login,3
+,,0,student finance address,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance contact details,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance contact number,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance england,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance england address,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance england contact number,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance england number,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance england phone number,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance forms,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,student finance helpline,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student finance login,should,https://www.gov.uk/student-finance-register-login,3
+,,0,student finance telephone number,should,https://www.gov.uk/contact-student-finance-england,3
+,,0,student grants,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,student grants,should,https://www.gov.uk/extra-money-pay-university,5
+,,0,student loan,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,student loans,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,student loans company,should,https://www.gov.uk/apply-for-student-finance-2011-12,3
+,,0,student loans company,should,https://www.gov.uk/apply-for-student-finance-2012-13,3
+,,0,tariff classification,should,https://www.gov.uk/finding-commodity-codes,3
+,,0,tariff classification,should,https://www.gov.uk/trade-tariff,3
+,,0,tariff codes,should,https://www.gov.uk/finding-commodity-codes,3
+,,0,tariff codes,should,https://www.gov.uk/trade-tariff,3
+,,0,tax credit,should,https://www.gov.uk/benefits-adviser,5
+,,0,tax credit,should,https://www.gov.uk/claim-tax-credits,3
+,,0,trade mark,should,https://www.gov.uk/intellectual-property-an-overview,5
+,,0,trade mark,should,https://www.gov.uk/register-a-trademark,5
+,,0,trade mark,should,https://www.gov.uk/search-for-trademark,5
+,,0,trade tariff,should,https://www.gov.uk/finding-commodity-codes,3
+,,0,trade tariff,should,https://www.gov.uk/trade-tariff,3
+,,0,trademark,should,https://www.gov.uk/intellectual-property-an-overview,5
+,,0,trademark,should,https://www.gov.uk/register-a-trademark,5
+,,0,trademark,should,https://www.gov.uk/search-for-trademark,5
+,,0,travel,should,https://www.gov.uk/plan-your-journey,5
+,,0,vacancies,should,https://www.gov.uk/jobs-jobsearch,3
+,,0,vehicle check,should,https://www.gov.uk/apply-for-a-vehicle-identity-check-vic,3
+,,0,vehicle check,should,https://www.gov.uk/vehicle-identity-check,3
+,,0,vehicle check,should not,https://www.gov.uk/checks-on-job-applicants,10
+,,0,vehicle enquiry,should,https://www.gov.uk/vehicle-identity-check,3
+,,0,vehicle tax,should,https://www.gov.uk/car-tax-disc-vehicle-licence,2
+,,0,visa,should,https://www.gov.uk/check-an-employees-right-to-work-documents,5
+,,0,visa,should,https://www.gov.uk/uk-visa,3
+,,0,visa,should,https://www.gov.uk/uk-visa-sponsorship-employers,5
+,,0,visa,should not,https://www.gov.uk/apply-first-provisional-driving-licence,5
+,,0,visa,should not,https://www.gov.uk/change-photo-driving-licence,5
+,,0,visa,should not,https://www.gov.uk/exchange-paper-driving-licence-photocard-licence,5
+,,0,voluntary redundancy,should,https://www.gov.uk/redundant-your-rights,5
+,,0,warm front,should,https://www.gov.uk/warm-front-scheme,3
+,,0,what council tax band am i,should,https://www.gov.uk/council-tax-bands,3
+,,0,what is the statutory level of sick pay,should,https://www.gov.uk/sick-leave-pay-employees,5
+,,0,what is the statutory level of sick pay,should,https://www.gov.uk/statutory-sick-pay-ssp,3
+,,0,when does child benefit stop,should,https://www.gov.uk/when-child-benefit-stops,3
+,,0,when is my mot due,should,https://www.gov.uk/check-mot-status-vehicle,3
+,,0,when is my mot due,should,https://www.gov.uk/getting-an-mot,3
+,,0,winter fuel,should,https://www.gov.uk/cold-weather-payment,5
+,,0,winter fuel,should,https://www.gov.uk/warm-front-scheme,5
+,,0,winter fuel,should,https://www.gov.uk/winter-fuel-payment,3
+,,0,winter fuel allowance,should,https://www.gov.uk/cold-weather-payment,5
+,,0,winter fuel allowance,should,https://www.gov.uk/warm-front-scheme,5
+,,0,winter fuel allowance,should,https://www.gov.uk/winter-fuel-payment,3
+,,0,winter fuel payment,should,https://www.gov.uk/cold-weather-payment,5
+,,0,winter fuel payment,should,https://www.gov.uk/warm-front-scheme,5
+,,0,winter fuel payment,should,https://www.gov.uk/winter-fuel-payment,3
+,,0,work related activity group,should,https://www.gov.uk/employment-support-allowance,3
+,,0,working abroad,should,https://www.gov.uk/working-abroad,3
+,,0,working from home,should,https://www.gov.uk/flexible-working,3
+,,0,working from home,should,https://www.gov.uk/introduction-to-business-rates,5
+,,0,working from home,should,https://www.gov.uk/travel-disruption-your-rights-at-work,5
+,,0,working overseas,should,https://www.gov.uk/working-abroad,3
