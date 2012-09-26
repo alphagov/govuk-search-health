@@ -126,8 +126,8 @@ Directgov searches,Business Link searches,Total monthly searches,When I search f
 1481,,1481,forms,should,https://www.gov.uk/apply-for-tax-disc-refund-form-v14,5
 1463,,1463,pff2,should,https://www.gov.uk/student-finance-evidence-given-by-parents-partners,3
 1463,,1463,pff2,should,https://www.gov.uk/student-finance-register-login,3
-1113,282,1395,smp,should,https://www.gov.uk/statutory-maternity-pay,
-1113,282,1395,smp,should,https://www.gov.uk/maternity-leave-pay-employees,
+1113,282,1395,smp,should,https://www.gov.uk/statutory-maternity-pay,3
+1113,282,1395,smp,should,https://www.gov.uk/maternity-leave-pay-employees,3
 1375,,1375,national insurance number,should,https://www.gov.uk/national-insurance,3
 1361,,1361,loans,should,https://www.gov.uk/budgeting-loans,5
 1361,,1361,loans,should,https://www.gov.uk/crisis-loans,5
@@ -196,8 +196,8 @@ Directgov searches,Business Link searches,Total monthly searches,When I search f
 0,712,712,business rates,should,https://www.gov.uk/introduction-to-business-rates,3
 0,712,712,business rates,should not,https://www.gov.uk/benefits-adviser,5
 287,315,602,working time regulations,should,https://www.gov.uk/maximum-weekly-working-hours,3
-0,522,522,holiday calculator,should,https://www.gov.uk/calculate-your-holiday-entitlement,
-0,427,427,temporary event notice,should,https://www.gov.uk/temporary-events-notice,
+0,522,522,holiday calculator,should,https://www.gov.uk/calculate-your-holiday-entitlement,3
+0,427,427,temporary event notice,should,https://www.gov.uk/temporary-events-notice,3
 0,295,295,commodity codes,should,https://www.gov.uk/finding-commodity-codes,3
 0,295,295,commodity codes,should,https://www.gov.uk/trade-tariff,3
 0,266,266,employment contract,should,https://www.gov.uk/employment-contracts-and-conditions,5
