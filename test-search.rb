@@ -28,22 +28,30 @@ end
 success_count = total_count = score = total_score = 0
 
 tests.each do |term, imperative, path, limit, weight|
-  unless imperative == "should"
-    puts "[SKIPPING] negative check for '#{term}'"
-    next
-  end
+  positive_test = case imperative
+                  when "should"
+                    true
+                  when "should not"
+                    false
+                  else
+                    raise "Gnnnaaaarrrggh!"
+                  end
   results = JSON.load(open("http://search.dev.gov.uk/search.json?q=#{CGI.escape(term)}"))
   found_index = results.index { |result| result["link"] == path }
 
   total_count += 1
   total_score += weight
 
-  success = found_index && found_index < limit
+  found_in_limit = found_index && found_index < limit
+  success = positive_test ? found_in_limit : ! found_in_limit
+
   marker = "[#{weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
+
+  success_count += 1 if success
+  score += weight if success
+
   if found_index
     puts "#{marker} Found '#{path}' for '#{term}' in position #{found_index + 1} (expected <= #{limit})"
-    success_count += 1 if success
-    score += weight if success
   else
     puts "#{marker} Didn't find '#{path}' in results for '#{term}'"
   end
