@@ -50,6 +50,11 @@ tests.each do |term, imperative, path, limit, weight|
                     raise "Gnnnaaaarrrggh!"
                   end
 
+  if weight == 0
+    puts "Skipping zero-weight test"
+    next
+  end
+
   request = Net::HTTP::Get.new((BASE_URL + "?q=#{CGI.escape(term)}").request_uri)
   request.basic_auth(*authentication) if authentication
   response = http.request(request)
