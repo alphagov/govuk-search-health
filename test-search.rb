@@ -74,7 +74,8 @@ tests.each do |term, imperative, path, limit, weight|
   score += weight if success
 
   if found_index
-    puts "#{marker} Found '#{path}' for '#{term}' in position #{found_index + 1} (expected <= #{limit})"
+    expectation = positive_test ? "<= #{limit}" : "> #{limit}"
+    puts "#{marker} Found '#{path}' for '#{term}' in position #{found_index + 1} (expected #{expectation})"
   else
     puts "#{marker} Didn't find '#{path}' in results for '#{term}'"
   end
