@@ -1,9 +1,19 @@
 #!/usr/bin/env ruby
 
 require "csv"
-require "open-uri"
+require "net/http"
+require "uri"
 require "json"
 require "cgi"
+
+if ENV["CREDENTIALS"]
+  authentication = ENV["CREDENTIALS"].split(":")
+else
+  authentication = nil
+end
+
+search_host = ENV["SEARCH_BASE"] || "http://search.dev.gov.uk"
+BASE_URL = URI.parse(search_host) + "/search.json"
 
 filename = ARGV[0] || "search-terms.txt"
 
@@ -27,6 +37,9 @@ end
 
 success_count = total_count = score = total_score = 0
 
+# Using Net::HTTP here because open-uri doesn't give us basic auth
+http = Net::HTTP.new(BASE_URL.host, BASE_URL.port)
+
 tests.each do |term, imperative, path, limit, weight|
   positive_test = case imperative
                   when "should"
@@ -36,7 +49,12 @@ tests.each do |term, imperative, path, limit, weight|
                   else
                     raise "Gnnnaaaarrrggh!"
                   end
-  results = JSON.load(open("http://search.dev.gov.uk/search.json?q=#{CGI.escape(term)}"))
+
+  request = Net::HTTP::Get.new((BASE_URL + "?q=#{CGI.escape(term)}").request_uri)
+  request.basic_auth(*authentication) if authentication
+  response = http.request(request)
+  results = JSON.load(response.body)
+
   found_index = results.index { |result| result["link"] == path }
 
   total_count += 1
