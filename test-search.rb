@@ -54,7 +54,8 @@ end
 success_count = total_count = score = total_score = 0
 
 # Using Net::HTTP here because open-uri doesn't give us basic auth
-http = Net::HTTP.start(BASE_URL.host, BASE_URL.port, nil, nil, nil, nil, use_ssl: BASE_URL.scheme == "https")
+http = Net::HTTP.new(BASE_URL.host, BASE_URL.port)
+http.use_ssl = (BASE_URL.scheme == "https")
 
 tests.each do |term, imperative, path, limit, weight|
   positive_test = case imperative
