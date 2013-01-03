@@ -23,6 +23,5 @@ Against a development box:
 
 Against production:
 
-    SEARCH_BASE=http://search.production.alphagov.co.uk CREDENTIALS=user:pass ./test-search.rb weighted-search-terms.csv
+    SEARCH_BASE=https://www.gov.uk/api/ ./test-search.rb --api-format --slow weighted-search-terms.csv
 
-&hellip;using the username and password for access to application servers.
