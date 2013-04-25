@@ -31,25 +31,17 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-filename = ARGV[0] || "search-terms.txt"
+filename = ARGV[0] || "weighted-search-terms.csv"
 
-tests = if filename.end_with? ".csv"
-  CSV.open(filename, headers: true).map { |row|
-    [
-      row["When I search for..."],
-      row["Then I..."],
-      row["see..."].sub(%r{https://www.gov.uk}, ""),
-      row["in the top ... results"].to_i,
-      row["Total monthly searches"].to_i
-    ]
-  }
-else
-  open(filename).each_line.map { |line|
-    term, imperative, path, limit = line.split('|').map(&:strip).reject(&:empty?)
-    limit = limit.to_i
-    [term, imperative, path, limit.to_i, 1]
-  }
-end
+tests = CSV.open(filename, headers: true).map { |row|
+          [
+            row["When I search for..."],
+            row["Then I..."],
+            row["see..."].sub(%r{https://www.gov.uk}, ""),
+            row["in the top ... results"].to_i,
+            row["Total monthly searches"].to_i
+          ]
+        }
 
 success_count = total_count = score = total_score = 0
 
