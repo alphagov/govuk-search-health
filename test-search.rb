@@ -40,11 +40,11 @@ CSV.open(filename, headers: true).each do |row|
       row["When I search for..."],
       row["Then I..."],
       row["see..."].sub(%r{https://www.gov.uk}, ""),
-      row["in the top ... results"].to_i,
-      row["Monthly searches"].to_i
+      Integer(row["in the top ... results"]),
+      Integer(row["Monthly searches"].to_i)
     ]
   rescue
-    STDERR.puts "Skipping incomplete row #{row}"
+    STDERR.puts "Skipping invalid or incomplete row #{row}"
   end
 end
 
