@@ -33,15 +33,20 @@ end.parse!
 
 filename = ARGV[0] || "weighted-search-terms.csv"
 
-tests = CSV.open(filename, headers: true).map { |row|
-          [
-            row["When I search for..."],
-            row["Then I..."],
-            row["see..."].sub(%r{https://www.gov.uk}, ""),
-            row["in the top ... results"].to_i,
-            row["Total monthly searches"].to_i
-          ]
-        }
+tests = []
+CSV.open(filename, headers: true).each do |row|
+  begin
+    tests << [
+      row["When I search for..."],
+      row["Then I..."],
+      row["see..."].sub(%r{https://www.gov.uk}, ""),
+      Integer(row["in the top ... results"]),
+      Integer(row["Monthly searches"].to_i)
+    ]
+  rescue
+    STDERR.puts "Skipping invalid or incomplete row #{row}"
+  end
+end
 
 success_count = total_count = score = total_score = 0
 
