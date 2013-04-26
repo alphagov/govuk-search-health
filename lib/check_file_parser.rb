@@ -1,4 +1,5 @@
 require_relative 'check'
+require "csv"
 
 class CheckFileParser
   def initialize(file)

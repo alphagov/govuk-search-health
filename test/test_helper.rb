@@ -2,6 +2,7 @@ require_relative '../env'
 require 'minitest/unit'
 require 'minitest/autorun'
 require 'shoulda-context'
+require 'webmock/minitest'
 
 Bundler.require :default, :test
 

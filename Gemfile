@@ -6,4 +6,5 @@ group :test do
   gem 'minitest', '3.3.0'
   gem 'shoulda-context', '1.1.1'
   gem 'turn', '0.9.6'
+  gem 'webmock', '1.11.0'
 end

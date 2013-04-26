@@ -1,12 +1,8 @@
 require_relative '../env'
-
-require "csv"
-require "net/http"
 require "uri"
-require "json"
-require "cgi"
 
 require_relative "check_file_parser"
+require_relative "search_client"
 
 class CheckSearch
   def initialize(authentication, search_host, filename, api_format, slow)
@@ -19,25 +15,13 @@ class CheckSearch
 
     success_count = total_count = score = total_score = 0
 
-    # Using Net::HTTP here because open-uri doesn't give us basic auth
-    http = Net::HTTP.new(@base_url.host, @base_url.port)
-    http.use_ssl = (@base_url.scheme == "https")
-
+    search_client = SearchClient.new(base_url: @base_url, authentication: @authentication, api_format: @api_format)
     checks.each do |check|
-      request = Net::HTTP::Get.new((@base_url + "?q=#{CGI.escape(check.search_term)}").request_uri)
-      request.basic_auth(*@authentication) if @authentication
-      response = http.request(request)
-      results = JSON.load(response.body)
+      results = search_client.search(check.search_term)
 
-      if @api_format
-        # Current bug: in the content API the hosts aren't always correct, so let's
-        # just use the path for now and remove this when it's no longer needed
-        found_index = results["results"].index { |result|
-          URI.parse(result["web_url"]).path == check.path
-        }
-      else
-        found_index = results.index { |result| result["link"] == check.path }
-      end
+      found_index = results.index { |url|
+        URI.parse(url).path == check.path
+      }
 
       total_count += 1
       total_score += check.weight
