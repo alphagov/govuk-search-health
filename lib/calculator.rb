@@ -15,7 +15,12 @@ class Calculator
 
   def summarise
     score_percentage = @score.to_f / @possible_score * 100
-    puts "Score: #{@score}/#{@possible_score} (#{format('%.2f', score_percentage)}%)"
-    puts "#{@success_count} of #{@total_count} succeeded"
+    logger.info("Score: #{@score}/#{@possible_score} (#{format('%.2f', score_percentage)}%)")
+    logger.info("#{@success_count} of #{@total_count} succeeded")
   end
+
+  private
+    def logger
+      Logging.logger[self]
+    end
 end

@@ -1,6 +1,9 @@
 require_relative 'env'
 require_relative 'lib/check_search'
 
+Logging.logger.root.level = :info
+Logging.logger.root.add_appenders(Logging.appenders.stdout)
+
 task :check_search do
   if ENV["CREDENTIALS"]
     authentication = ENV["CREDENTIALS"].split(":")

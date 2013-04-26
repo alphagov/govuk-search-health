@@ -20,7 +20,7 @@ class CheckFileParser
           checks << check
         end
       rescue => e
-        STDERR.puts "Skipping invalid or incomplete row: #{row} because: #{e.message}"
+        logger.warn("Skipping invalid or incomplete row: #{row} because: #{e.message}")
       end
     end
     checks
@@ -29,5 +29,9 @@ class CheckFileParser
   private
     def parse_integer_with_comma(raw)
       Integer(raw.gsub(",", ""))
+    end
+
+    def logger
+      Logging.logger[self]
     end
 end

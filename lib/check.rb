@@ -37,12 +37,17 @@ class Check
     marker = "[#{weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
     if found_index
       expectation = positive_check? ? "<= #{minimum_rank}" : "> #{minimum_rank}"
-      puts "#{marker} Found '#{path}' for '#{search_term}' in position #{found_index + 1} (expected #{expectation})"
+      logger.info("#{marker} Found '#{path}' for '#{search_term}' in position #{found_index + 1} (expected #{expectation})")
     else
-      puts "#{marker} Didn't find '#{path}' in results for '#{search_term}'"
+      logger.info("#{marker} Didn't find '#{path}' in results for '#{search_term}'")
     end
 
     score = success ? weight : 0
     Result.new(success, score, weight)
   end
+
+  private
+    def logger
+      Logging.logger[self]
+    end
 end

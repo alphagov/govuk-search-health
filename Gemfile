@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'logging', '1.8.1'
 gem 'rake', '10.0.4'
 
 group :test do
