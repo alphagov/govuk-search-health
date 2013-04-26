@@ -8,7 +8,7 @@ class Calculator
 
   def add(result)
     @total_count += 1
-    @possible_score += result.maximum
+    @possible_score += result.possible_score
     @success_count += 1 if result.success
     @score += result.score
   end
