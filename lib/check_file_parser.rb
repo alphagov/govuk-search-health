@@ -20,7 +20,7 @@ class CheckFileParser
           checks << check
         end
       rescue => e
-        logger.warn("Skipping invalid or incomplete row: #{row} because: #{e.message}")
+        logger.error("Skipping invalid or incomplete row: #{row} because: #{e.message}")
       end
     end
     checks

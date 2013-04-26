@@ -37,9 +37,9 @@ class Check
     marker = "[#{weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
     if found_index
       expectation = positive_check? ? "<= #{minimum_rank}" : "> #{minimum_rank}"
-      logger.info("#{marker} Found '#{path}' for '#{search_term}' in position #{found_index + 1} (expected #{expectation})")
+      logger.pass("#{marker} Found '#{path}' for '#{search_term}' in position #{found_index + 1} (expected #{expectation})")
     else
-      logger.info("#{marker} Didn't find '#{path}' in results for '#{search_term}'")
+      logger.fail("#{marker} Didn't find '#{path}' in results for '#{search_term}'")
     end
 
     score = success ? weight : 0
