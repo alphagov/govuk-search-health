@@ -18,6 +18,8 @@ class CheckFileParser
         check.weight = parse_integer_with_comma(row["Monthly searches"])
         if check.valid?
           checks << check
+        else
+          logger.error("Skipping invalid or incomplete row: #{row.to_s.chomp}")
         end
       rescue => e
         logger.error("Skipping invalid or incomplete row: #{row.to_s.chomp} because: #{e.message}")
