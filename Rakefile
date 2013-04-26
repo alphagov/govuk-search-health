@@ -3,7 +3,6 @@ require_relative 'lib/check_search'
 
 Logging.logger.root.level = :info
 Logging.logger.root.add_appenders(Logging.appenders.stdout)
-Logging.init :debug, :info, :warn, :pass, :fail, :error, :fatal
 
 task :check_search do
   if ENV["CREDENTIALS"]

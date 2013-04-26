@@ -34,6 +34,13 @@ class Check
     found_in_limit = found_index && found_index < minimum_rank
     success = !!(positive_check? ? found_in_limit : ! found_in_limit)
 
+    # TODO
+    # There are really three outcomes for each test:
+    #  - result was in the results and ranked well enough
+    #  - result was in the results but didn't rank well enough
+    #  - result wasn't in the results
+    #
+    # We need to reflect this better in the logging level.
     marker = "[#{weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
     if found_index
       expectation = positive_check? ? "<= #{minimum_rank}" : "> #{minimum_rank}"
