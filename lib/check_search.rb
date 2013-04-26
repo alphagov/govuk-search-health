@@ -6,6 +6,8 @@ require "uri"
 require "json"
 require "cgi"
 
+require_relative "check_file_parser"
+
 class CheckSearch
   def initialize(authentication, search_host, filename, api_format, slow)
     @authentication, @filename, @api_format, @slow = authentication, filename, api_format, slow
@@ -13,20 +15,7 @@ class CheckSearch
   end
 
   def call
-    tests = []
-    CSV.open(@filename, headers: true).each do |row|
-      begin
-        tests << [
-          row["When I search for..."],
-          row["Then I..."],
-          row["see..."].sub(%r{https://www.gov.uk}, ""),
-          Integer(row["in the top ... results"]),
-          Integer(row["Monthly searches"].to_i)
-        ]
-      rescue
-        STDERR.puts "Skipping invalid or incomplete row #{row}"
-      end
-    end
+    checks = CheckFileParser.new(File.open(@filename)).checks
 
     success_count = total_count = score = total_score = 0
 
@@ -34,22 +23,8 @@ class CheckSearch
     http = Net::HTTP.new(@base_url.host, @base_url.port)
     http.use_ssl = (@base_url.scheme == "https")
 
-    tests.each do |term, imperative, path, limit, weight|
-      positive_test = case imperative
-                      when "should"
-                        true
-                      when "should not"
-                        false
-                      else
-                        raise "Gnnnaaaarrrggh!"
-                      end
-
-      if weight == 0
-        puts "Skipping zero-weight test"
-        next
-      end
-
-      request = Net::HTTP::Get.new((@base_url + "?q=#{CGI.escape(term)}").request_uri)
+    checks.each do |check|
+      request = Net::HTTP::Get.new((@base_url + "?q=#{CGI.escape(check.search_term)}").request_uri)
       request.basic_auth(*@authentication) if @authentication
       response = http.request(request)
       results = JSON.load(response.body)
@@ -58,28 +33,28 @@ class CheckSearch
         # Current bug: in the content API the hosts aren't always correct, so let's
         # just use the path for now and remove this when it's no longer needed
         found_index = results["results"].index { |result|
-          URI.parse(result["web_url"]).path == path
+          URI.parse(result["web_url"]).path == check.path
         }
       else
-        found_index = results.index { |result| result["link"] == path }
+        found_index = results.index { |result| result["link"] == check.path }
       end
 
       total_count += 1
-      total_score += weight
+      total_score += check.weight
 
-      found_in_limit = found_index && found_index < limit
-      success = positive_test ? found_in_limit : ! found_in_limit
+      found_in_limit = found_index && found_index < check.weight
+      success = check.positive_check? ? found_in_limit : ! found_in_limit
 
-      marker = "[#{weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
+      marker = "[#{check.weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
 
       success_count += 1 if success
-      score += weight if success
+      score += check.weight if success
 
       if found_index
-        expectation = positive_test ? "<= #{limit}" : "> #{limit}"
-        puts "#{marker} Found '#{path}' for '#{term}' in position #{found_index + 1} (expected #{expectation})"
+        expectation = check.positive_check? ? "<= #{check.minimum_rank}" : "> #{check.minimum_rank}"
+        puts "#{marker} Found '#{check.path}' for '#{check.search_term}' in position #{found_index + 1} (expected #{expectation})"
       else
-        puts "#{marker} Didn't find '#{path}' in results for '#{term}'"
+        puts "#{marker} Didn't find '#{check.path}' in results for '#{check.search_term}'"
       end
 
       sleep 0.25 if @slow

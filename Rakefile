@@ -17,3 +17,12 @@ task :check_search do
   test_search = CheckSearch.new(authentication, search_host, filename, api_format, slow)
   test_search.call
 end
+
+require 'rake/testtask'
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList['test/**/*_test.rb']
+  t.verbose = true
+end
+
+task :default => :test

@@ -1,10 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ansi (1.4.3)
+    minitest (3.3.0)
     rake (10.0.4)
+    shoulda-context (1.1.1)
+    turn (0.9.6)
+      ansi
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  minitest (= 3.3.0)
   rake (= 10.0.4)
+  shoulda-context (= 1.1.1)
+  turn (= 0.9.6)
