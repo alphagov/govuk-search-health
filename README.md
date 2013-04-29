@@ -19,9 +19,9 @@ How to run it
 
 Against a development box:
 
-    ./test-search.rb weighted-search-terms.csv
+    bundle exec rake check_search
 
 Against production:
 
-    SEARCH_BASE=https://www.gov.uk/api/ ./test-search.rb --api-format --slow weighted-search-terms.csv
+    SLOW=true SEARCH_BASE=https://www.gov.uk/api/ bundle exec rake check_search
 

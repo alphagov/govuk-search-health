@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'logging', '1.8.1'
+gem 'rake', '10.0.4'
+
+group :test do
+  gem 'minitest', '3.3.0'
+  gem 'shoulda-context', '1.1.1'
+  gem 'turn', '0.9.6'
+  gem 'webmock', '1.11.0'
+end

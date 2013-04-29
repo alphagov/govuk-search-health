@@ -1,0 +1,58 @@
+require_relative "../test_helper"
+
+class SearchClientTest < MiniTest::Unit::TestCase
+
+  def api_response_body
+    {
+      "_response_info" => {
+        "status" => "ok"
+      },
+      "results" => [
+        {
+          "web_url" => "https://www.gov.uk/a"
+        },
+        {
+          "web_url" => "https://www.gov.uk/b"
+        },
+      ]
+    }
+  end
+
+  def rummager_response_body
+    [
+      {
+        "link" => "/a"
+      },
+      {
+        "link" => "/b"
+      }
+    ]
+  end
+
+  def stub_api(search_term)
+    stub_request(:get, "https://www.gov.uk/api/search.json?q=#{CGI.escape(search_term)}").
+            with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
+            to_return(status: 200, body: api_response_body.to_json)
+  end
+
+  def stub_rummager(search_term)
+    stub_request(:get, "http://search.dev.gov.uk/search.json?q=#{CGI.escape(search_term)}").
+            with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
+            to_return(status: 200, body: rummager_response_body.to_json)
+  end
+
+  should "fetch results" do
+    stub_api("carmen")
+    expected = ["https://www.gov.uk/a", "https://www.gov.uk/b"]
+    assert_equal expected, SearchClient.new.search("carmen")
+  end
+
+  should "support Rummager response format" do
+    stub_rummager("cheese")
+    expected = ["/a", "/b"]
+    base_url = URI.parse("http://search.dev.gov.uk/search.json")
+    assert_equal expected, SearchClient.new(:base_url => base_url).search("cheese")
+  end
+
+  should_eventually "report unexpected responses (eg html error pages)"
+end
