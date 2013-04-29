@@ -29,14 +29,14 @@ class SearchClientTest < MiniTest::Unit::TestCase
     ]
   end
 
-  def stub_api(search_term)
-    stub_request(:get, "https://www.gov.uk/api/search.json?q=#{CGI.escape(search_term)}").
+  def stub_api(search_term, index="mainstream")
+    stub_request(:get, "https://www.gov.uk/api/search.json?q=#{CGI.escape(search_term)}&index=#{index}").
             with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
             to_return(status: 200, body: api_response_body.to_json)
   end
 
-  def stub_rummager(search_term)
-    stub_request(:get, "http://search.dev.gov.uk/search.json?q=#{CGI.escape(search_term)}").
+  def stub_rummager(search_term, index="mainstream")
+    stub_request(:get, "http://search.dev.gov.uk/search.json?q=#{CGI.escape(search_term)}&index=#{index}").
             with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
             to_return(status: 200, body: rummager_response_body.to_json)
   end
@@ -52,6 +52,12 @@ class SearchClientTest < MiniTest::Unit::TestCase
     expected = ["/a", "/b"]
     base_url = URI.parse("http://search.dev.gov.uk/search.json")
     assert_equal expected, SearchClient.new(:base_url => base_url).search("cheese")
+  end
+
+  should "allow overriding the index name" do
+    stub_api("chalk", "government")
+    expected = ["https://www.gov.uk/a", "https://www.gov.uk/b"]
+    assert_equal expected, SearchClient.new(index: "government").search("chalk")
   end
 
   should_eventually "report unexpected responses (eg html error pages)"

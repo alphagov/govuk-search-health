@@ -7,10 +7,11 @@ class SearchClient
   def initialize(options={})
     @base_url       = options[:base_url] || URI.parse("https://www.gov.uk/api/search.json")
     @authentication = options[:authentication] || nil
+    @index          = options[:index] || "mainstream"
   end
 
   def search(term)
-    request = Net::HTTP::Get.new((@base_url + "?q=#{CGI.escape(term)}").request_uri)
+    request = Net::HTTP::Get.new((@base_url + "?q=#{CGI.escape(term)}&index=#{@index}").request_uri)
     request.basic_auth(*@authentication) if @authentication
     response = http_client.request(request)
     json_response = JSON.parse(response.body)
