@@ -2,8 +2,8 @@ require_relative '../env'
 require "uri"
 
 class CheckSearch
-  def initialize(authentication, search_host, filename, slow)
-    @authentication, @filename, @slow = authentication, filename, slow
+  def initialize(authentication, search_host, filename, index, slow)
+    @authentication, @filename, @index, @slow = authentication, filename, index, slow
     @base_url = URI.parse(search_host) + "search.json"
   end
 
@@ -15,7 +15,7 @@ class CheckSearch
 
       sleep 0.25 if @slow
     end
-    calculator.summarise
+    calculator
   end
 
   private
@@ -24,7 +24,7 @@ class CheckSearch
     end
 
     def search_client
-      @_search_client ||= SearchClient.new(base_url: @base_url, authentication: @authentication)
+      @_search_client ||= SearchClient.new(base_url: @base_url, index: @index, authentication: @authentication)
     end
 
     def calculator
