@@ -12,8 +12,8 @@ class CheckFileParser
       begin
         check = Check.new
         check.search_term      = row["When I search for..."]
-        check.imperative        = row["Then I..."]
-        check.path     = row["see..."].sub(%r{https://www.gov.uk}, "")
+        check.imperative       = row["Then I..."]
+        check.path             = row["see..."].sub(%r{https://www.gov.uk}, "")
         check.minimum_rank     = Integer(row["in the top ... results"])
         check.weight = parse_integer_with_comma(row["Monthly searches"])
         if check.valid?
