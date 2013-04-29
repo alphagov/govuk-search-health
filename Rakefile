@@ -18,12 +18,13 @@ task :download_checks do
   resource_id = "0AmD7K4ab1dYrdDR5c2tITTNHRUZqajFTTU8wODAzZ1E"
   io = open("https://docs.google.com/spreadsheet/pub?key=#{resource_id}&single=true&gid=0&output=csv")
 
-  file = File.new("downloaded-weighted-search-terms-#{Time.now.utc.iso8601}.csv", "wb")
+  file = File.new("downloaded-mainstream-weighted-search-terms-#{Time.now.utc.iso8601}.csv", "wb")
   file.write(io.read)
   file.close
 
-  # Create a symlink called "weighted-search-terms.csv" pointing at the file just downloaded
-  FileUtils.ln_s(File.basename(file), "weighted-search-terms.csv", force: true)
+  # Create a symlink called "mainstream-weighted-search-terms.csv" pointing at the file just downloaded
+  FileUtils.ln_s(File.basename(file), "mainstream-weighted-search-terms.csv", force: true)
+  puts "Downloaded mainstream-weighted-search-terms.csv"
 end
 
 desc "Runs search health check using weighted check data"
@@ -38,8 +39,9 @@ task :check_search do
 
   slow = !ENV["SLOW"].nil?
 
-  filename = "weighted-search-terms.csv"
-  test_search = CheckSearch.new(authentication, search_host, filename, slow)
+  index = "mainstream"
+  filename = "mainstream-weighted-search-terms.csv"
+  test_search = CheckSearch.new(authentication, search_host, filename, index, slow)
   test_search.call
 end
 
