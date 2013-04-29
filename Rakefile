@@ -26,6 +26,7 @@ task :download_checks do
   FileUtils.ln_s(File.basename(file), "weighted-search-terms.csv", force: true)
 end
 
+desc "Runs search health check using weighted check data"
 task :check_search do
   if ENV["CREDENTIALS"]
     authentication = ENV["CREDENTIALS"].split(":")
