@@ -7,7 +7,6 @@ class SearchClient
   def initialize(options={})
     @base_url       = options[:base_url] || URI.parse("https://www.gov.uk/api/")
     @authentication = options[:authentication] || nil
-    @api_format     = options[:api_format] || true
   end
 
   def search(term)
@@ -16,10 +15,12 @@ class SearchClient
     response = http_client.request(request)
     json_response = JSON.parse(response.body)
 
-    if @api_format
+    if json_response.is_a?(Hash) # Content API
       json_response["results"].map { |result| result["web_url"] }
-    else
+    elsif json_response.is_a?(Array) # Rummager
       json_response.map { |result| result["link"] }
+    else
+      raise "Unexpected response format: #{json_response.inspect}"
     end
   end
 

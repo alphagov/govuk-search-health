@@ -6,8 +6,8 @@ require_relative "search_client"
 require_relative "calculator"
 
 class CheckSearch
-  def initialize(authentication, search_host, filename, api_format, slow)
-    @authentication, @filename, @api_format, @slow = authentication, filename, api_format, slow
+  def initialize(authentication, search_host, filename, slow)
+    @authentication, @filename, @slow = authentication, filename, slow
     @base_url = URI.parse(search_host) + "search.json"
   end
 
@@ -28,7 +28,7 @@ class CheckSearch
     end
 
     def search_client
-      @_search_client ||= SearchClient.new(base_url: @base_url, authentication: @authentication, api_format: @api_format)
+      @_search_client ||= SearchClient.new(base_url: @base_url, authentication: @authentication)
     end
 
     def calculator

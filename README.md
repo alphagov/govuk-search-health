@@ -23,5 +23,5 @@ Against a development box:
 
 Against production:
 
-    API_FORMAT=true SLOW=true SEARCH_BASE=https://www.gov.uk/api/ bundle exec rake check_search
+    SLOW=true SEARCH_BASE=https://www.gov.uk/api/ bundle exec rake check_search
 
