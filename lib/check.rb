@@ -34,17 +34,15 @@ class Check
     found_in_limit = found_index && found_index < minimum_rank
     success = !!(positive_check? ? found_in_limit : ! found_in_limit)
 
-    # TODO
-    # There are really three outcomes for each test:
-    #  - result was in the results and ranked well enough
-    #  - result was in the results but didn't rank well enough
-    #  - result wasn't in the results
-    #
-    # We need to reflect this better in the logging level.
-    marker = "[#{weight}-POINT #{success ? "SUCCESS" : "FAILURE"}]"
+    marker = "[#{weight}-POINT]"
     if found_index
       expectation = positive_check? ? "<= #{minimum_rank}" : "> #{minimum_rank}"
-      logger.pass("#{marker} Found '#{path}' for '#{search_term}' in position #{found_index + 1} (expected #{expectation})")
+      message = "#{marker} Found '#{path}' for '#{search_term}' in position #{found_index + 1} (expected #{expectation})"
+      if success
+        logger.pass(message)
+      else
+        logger.fail(message)
+      end
     else
       logger.fail("#{marker} Didn't find '#{path}' in results for '#{search_term}'")
     end
