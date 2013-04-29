@@ -6,8 +6,6 @@ require 'webmock/minitest'
 
 Bundler.require :default, :test
 
-Dir["lib/*.rb"].each {|file| require_relative "../#{file}" }
-
 class MiniTest::Unit::TestCase
   include Shoulda::Context::Assertions
   include Shoulda::Context::InstanceMethods

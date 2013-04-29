@@ -1,10 +1,6 @@
 require_relative '../env'
 require "uri"
 
-require_relative "check_file_parser"
-require_relative "search_client"
-require_relative "calculator"
-
 class CheckSearch
   def initialize(authentication, search_host, filename, slow)
     @authentication, @filename, @slow = authentication, filename, slow
