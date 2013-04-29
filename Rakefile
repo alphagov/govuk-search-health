@@ -42,7 +42,7 @@ task :download_checks do
   end
 end
 
-desc "Runs search health check using weighted check data"
+desc "Runs search health check using weighted check data. Optionally specify indices in INDICES environment variable."
 task :check_search do
   if ENV["CREDENTIALS"]
     authentication = ENV["CREDENTIALS"].split(":")
@@ -54,10 +54,18 @@ task :check_search do
 
   slow = !ENV["SLOW"].nil?
 
-  index = "mainstream"
-  filename = "mainstream-weighted-search-terms.csv"
-  test_search = CheckSearch.new(authentication, search_host, filename, index, slow)
-  test_search.call
+  indices = if ENV["INDICES"]
+    ENV["INDICES"].split(",")
+  else
+    ["mainstream", "detailed", "government"]
+  end
+
+  indices.each do |index|
+    puts "Running checks against #{index} index"
+    filename = "#{index}-weighted-search-terms.csv"
+    test_search = CheckSearch.new(authentication, search_host, filename, index, slow)
+    test_search.call
+  end
 end
 
 require 'rake/testtask'
