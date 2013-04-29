@@ -15,7 +15,7 @@ class CheckSearch
 
       sleep 0.25 if @slow
     end
-    calculator.summarise
+    calculator
   end
 
   private

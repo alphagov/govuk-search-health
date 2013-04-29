@@ -60,12 +60,20 @@ task :check_search do
     ["mainstream", "detailed", "government"]
   end
 
-  indices.each do |index|
+  calculators = indices.map do |index|
     puts "Running checks against #{index} index"
+
     filename = "#{index}-weighted-search-terms.csv"
     test_search = CheckSearch.new(authentication, search_host, filename, index, slow)
-    test_search.call
+    calculator = test_search.call
+
+    puts "Outcome from checks against #{index} index"
+    calculator.summarise
+    calculator
   end
+
+  puts "Overall outcome:"
+  calculators.reduce(&:+).summarise
 end
 
 require 'rake/testtask'
