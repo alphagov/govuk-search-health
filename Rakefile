@@ -31,13 +31,13 @@ task :download_checks do
       #          then choose CSV
       io = open("https://docs.google.com/spreadsheet/pub?key=0AmD7K4ab1dYrdDR5c2tITTNHRUZqajFTTU8wODAzZ1E&single=true&gid=#{gid}&output=csv")
 
-      file = File.new("downloaded-#{index}-weighted-search-terms-#{Time.now.utc.iso8601}.csv", "wb")
+      file = File.new("data/downloaded-#{index}-weighted-search-terms-#{Time.now.utc.iso8601}.csv", "wb")
       file.write(io.read)
       file.close
 
       # Create a symlink called "#{index}-weighted-search-terms.csv" pointing at the file just downloaded
-      FileUtils.ln_s(File.basename(file), "#{index}-weighted-search-terms.csv", force: true)
-      puts "Downloaded #{index}-weighted-search-terms.csv"
+      `cd data && ln -sf #{File.basename(file)} #{index}-weighted-search-terms.csv`
+      puts "Downloaded data/#{index}-weighted-search-terms.csv"
     end
   end
 end
@@ -63,7 +63,7 @@ task :check_search do
   calculators = indices.map do |index|
     puts "Running checks against #{index} index"
 
-    filename = "#{index}-weighted-search-terms.csv"
+    filename = "data/#{index}-weighted-search-terms.csv"
     test_search = CheckSearch.new(authentication, search_host, filename, index, slow)
     calculator = test_search.call
 
