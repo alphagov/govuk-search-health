@@ -14,14 +14,12 @@ class SearchClient
     request = Net::HTTP::Get.new((@base_url + "?q=#{CGI.escape(term)}&index=#{@index}").request_uri)
     request.basic_auth(*@authentication) if @authentication
     response = http_client.request(request)
-    json_response = JSON.parse(response.body)
-
-    if json_response.is_a?(Hash) # Content API
-      json_response["results"].map { |result| result["web_url"] }
-    elsif json_response.is_a?(Array) # Rummager
-      json_response.map { |result| result["link"] }
-    else
-      raise "Unexpected response format: #{json_response.inspect}"
+    case response
+      when Net::HTTPSuccess # 2xx
+        json_response = JSON.parse(response.body)
+        extract_results(json_response)
+      else
+        raise "Unexpected response #{response}"
     end
   end
 
@@ -31,6 +29,16 @@ class SearchClient
         http = Net::HTTP.new(@base_url.host, @base_url.port)
         http.use_ssl = (@base_url.scheme == "https")
         http
+      end
+    end
+
+    def extract_results(json_response)
+      if json_response.is_a?(Hash) # Content API
+        json_response["results"].map { |result| result["web_url"] }
+      elsif json_response.is_a?(Array) # Rummager
+        json_response.map { |result| result["link"] }
+      else
+        raise "Unexpected response format: #{json_response.inspect}"
       end
     end
 end

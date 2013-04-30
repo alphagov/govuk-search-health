@@ -60,5 +60,17 @@ class SearchClientTest < MiniTest::Unit::TestCase
     assert_equal expected, SearchClient.new(index: "government").search("chalk")
   end
 
-  should_eventually "report unexpected responses (eg html error pages)"
+  context "4xx response" do
+    should "raise an error" do
+      index = "doesnotexist"
+      search_term = "a"
+      stub_request(:get, "https://www.gov.uk/api/search.json?q=#{CGI.escape(search_term)}&index=#{index}").
+            with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
+            to_return(status: 400, body: "{}")
+
+      assert_raises RuntimeError do
+        SearchClient.new(index: index).search(search_term)
+      end
+    end
+  end
 end
