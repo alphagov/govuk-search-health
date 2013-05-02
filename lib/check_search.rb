@@ -24,7 +24,7 @@ class CheckSearch
     end
 
     def search_client
-      @_search_client ||= SearchClient.new(base_url: @base_url, index: @index, authentication: @authentication)
+      @_search_client ||= JSONSearchClient.new(base_url: @base_url, index: @index, authentication: @authentication)
     end
 
     def calculator
