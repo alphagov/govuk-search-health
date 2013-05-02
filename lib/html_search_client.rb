@@ -33,7 +33,7 @@ class HTMLSearchClient
     end
 
     def extract_results(response_page)
-      response_page.css("##{@index}-results .results-list > li").map { |result|
+      response_page.css("##{@index}-results > ul > li").map { |result|
         result.css("a").first.get_attribute("href")
       }
     end
