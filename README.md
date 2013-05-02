@@ -21,7 +21,14 @@ Against a development box:
 
     bundle exec rake check_search
 
-Against production:
+To parse through the [frontend](https://github.com/alphagov/frontend):
+
+    SEARCH_BASE=http://www.dev.gov.uk FORMAT=html bundle exec rake check_search
+
+Against the production API:
 
     SLOW=true SEARCH_BASE=https://www.gov.uk/api/ bundle exec rake check_search
 
+Against the production frontend:
+
+    SEARCH_BASE=https://www.gov.uk FORMAT=html bundle exec rake check_search
