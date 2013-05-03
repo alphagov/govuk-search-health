@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'logging', '1.8.1'
 gem 'rake', '10.0.4'
+gem 'nokogiri', '1.5.9'
 
 group :test do
   gem 'minitest', '3.3.0'

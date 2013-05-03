@@ -60,11 +60,13 @@ task :check_search do
     ["mainstream", "detailed", "government"]
   end
 
+  format = ENV["FORMAT"] || "json"
+
   calculators = indices.map do |index|
     puts "Running checks against #{index} index"
 
     filename = "data/#{index}-weighted-search-terms.csv"
-    test_search = CheckSearch.new(authentication, search_host, filename, index, slow)
+    test_search = CheckSearch.new(authentication, search_host, filename, index, slow, format)
     calculator = test_search.call
 
     puts "Outcome from checks against #{index} index"

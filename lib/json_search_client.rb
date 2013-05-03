@@ -3,7 +3,7 @@ require "net/http"
 require "json"
 require "cgi"
 
-class SearchClient
+class JSONSearchClient
   def initialize(options={})
     @base_url       = options[:base_url] || URI.parse("https://www.gov.uk/api/search.json")
     @authentication = options[:authentication] || nil

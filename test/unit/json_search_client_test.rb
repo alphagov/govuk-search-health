@@ -1,6 +1,6 @@
 require_relative "../test_helper"
 
-class SearchClientTest < MiniTest::Unit::TestCase
+class JSONSearchClientTest < MiniTest::Unit::TestCase
 
   def api_response_body
     {
@@ -44,20 +44,20 @@ class SearchClientTest < MiniTest::Unit::TestCase
   should "fetch results" do
     stub_api("carmen")
     expected = ["https://www.gov.uk/a", "https://www.gov.uk/b"]
-    assert_equal expected, SearchClient.new.search("carmen")
+    assert_equal expected, JSONSearchClient.new.search("carmen")
   end
 
   should "support Rummager response format" do
     stub_rummager("cheese")
     expected = ["/a", "/b"]
     base_url = URI.parse("http://search.dev.gov.uk/search.json")
-    assert_equal expected, SearchClient.new(:base_url => base_url).search("cheese")
+    assert_equal expected, JSONSearchClient.new(:base_url => base_url).search("cheese")
   end
 
   should "allow overriding the index name" do
     stub_api("chalk", "government")
     expected = ["https://www.gov.uk/a", "https://www.gov.uk/b"]
-    assert_equal expected, SearchClient.new(index: "government").search("chalk")
+    assert_equal expected, JSONSearchClient.new(index: "government").search("chalk")
   end
 
   context "4xx response" do
@@ -69,7 +69,7 @@ class SearchClientTest < MiniTest::Unit::TestCase
             to_return(status: 400, body: "{}")
 
       assert_raises RuntimeError do
-        SearchClient.new(index: index).search(search_term)
+        JSONSearchClient.new(index: index).search(search_term)
       end
     end
   end

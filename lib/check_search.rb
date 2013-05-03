@@ -2,9 +2,19 @@ require_relative '../env'
 require "uri"
 
 class CheckSearch
-  def initialize(authentication, search_host, filename, index, slow)
-    @authentication, @filename, @index, @slow = authentication, filename, index, slow
-    @base_url = URI.parse(search_host) + "search.json"
+
+  attr_reader :search_client
+
+  def initialize(authentication, search_host, filename, index, slow, format)
+    @filename, @index, @slow = filename, index, slow
+
+    url = base_url(search_host, format)
+
+    @search_client = client_class(format).new(
+      base_url: url,
+      index: @index,
+      authentication: authentication
+    )
   end
 
   def call
@@ -23,8 +33,26 @@ class CheckSearch
       CheckFileParser.new(File.open(@filename)).checks
     end
 
-    def search_client
-      @_search_client ||= SearchClient.new(base_url: @base_url, index: @index, authentication: @authentication)
+    def client_class(format)
+      case format
+      when "json"
+        JSONSearchClient
+      when "html"
+        HTMLSearchClient
+      else
+        raise ArgumentError, "Unknown format '#{format}'"
+      end
+    end
+
+    def base_url(search_host, format)
+      case format
+      when "json"
+        URI.parse(search_host) + "search.json"
+      when "html"
+        URI.parse(search_host) + "search"
+      else
+        raise ArgumentError, "Unknown format '#{format}'"
+      end
     end
 
     def calculator
