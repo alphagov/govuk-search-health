@@ -79,7 +79,6 @@ class HTMLSearchClientTest < MiniTest::Unit::TestCase
       base_url = URI.parse("https://www.gov.uk/notsearch")
       search_term = "a"
       search_url = (base_url + "?q=#{CGI.escape(search_term)}").to_s
-      puts search_url
       stub_request(:get, search_url).
             with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
             to_return(status: 404, body: "Newp")
