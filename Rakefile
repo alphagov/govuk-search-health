@@ -69,13 +69,11 @@ task :check_search do
     test_search = CheckSearch.new(authentication, search_host, filename, index, slow, format)
     calculator = test_search.call
 
-    puts "Outcome from checks against #{index} index"
-    calculator.summarise
+    calculator.summarise("#{index.capitalize} score")
     calculator
   end
 
-  puts "Overall outcome:"
-  calculators.reduce(&:+).summarise
+  calculators.reduce(&:+).summarise("Overall score")
 end
 
 require 'rake/testtask'

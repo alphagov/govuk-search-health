@@ -6,6 +6,7 @@ gem 'nokogiri', '1.5.9'
 
 group :test do
   gem 'minitest', '3.3.0'
+  gem 'mocha', '0.13.3'
   gem 'shoulda-context', '1.1.1'
   gem 'turn', '0.9.6'
   gem 'webmock', '1.11.0'
