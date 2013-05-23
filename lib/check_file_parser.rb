@@ -30,7 +30,7 @@ class CheckFileParser
 
   private
     def parse_integer_with_comma(raw)
-      if raw.strip.empty?
+      if raw.nil? || raw.strip.empty?
         nil
       else
         Integer(raw.gsub(",", ""))
