@@ -15,7 +15,7 @@ class CheckFileParser
         check.imperative       = row["Then I..."]
         check.path             = row["see..."].sub(%r{https://www.gov.uk}, "")
         check.minimum_rank     = Integer(row["in the top ... results"])
-        check.weight = parse_integer_with_comma(row["Monthly searches"])
+        check.weight = parse_integer_with_comma(row["Monthly searches"]) || 1
         if check.valid?
           checks << check
         else
@@ -30,7 +30,11 @@ class CheckFileParser
 
   private
     def parse_integer_with_comma(raw)
-      Integer(raw.gsub(",", ""))
+      if raw.strip.empty?
+        nil
+      else
+        Integer(raw.gsub(",", ""))
+      end
     end
 
     def logger

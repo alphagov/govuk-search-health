@@ -39,6 +39,14 @@ mistake,a,should,https://www.gov.uk/a,1
     assert_equal expected, checks(data)
   end
 
+  should "default weight to 1 for rows with blank Monthly searches" do
+    data = """Monthly searches,When I search for...,Then I...,see...,in the top ... results
+   ,a,should,https://www.gov.uk/a,1
+"""
+    expected = [Check.new("a", "should", "/a", 1, 1)]
+    assert_equal expected, checks(data)
+  end
+
   should "skip rows that don't have a URL" do
     data = """Monthly searches,When I search for...,Then I...,see...,in the top ... results
 600,a,should,mistake,1
