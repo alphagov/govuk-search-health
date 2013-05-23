@@ -30,7 +30,7 @@ class CheckSearch
 
   private
     def checks
-      CheckFileParser.new(File.open(@filename)).checks
+      CheckFileParser.new(File.open(@filename)).checks.sort { |a,b| b.weight <=> a.weight }
     end
 
     def client_class(format)
